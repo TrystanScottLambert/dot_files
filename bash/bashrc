@@ -1,0 +1,20 @@
+alias ls='ls --color=always'
+alias vim='nvim'
+
+#pawsey stuff
+alias paws-get='~/.paws/paws_get.sh'
+alias paws-put='~/.paws/paws_put.sh'
+alias paws-mocks='~/.paws/paws_get_mocks.sh'
+alias paws='ssh -o LogLevel=Error tlambert@setonix.pawsey.org.au'
+
+. "$HOME/.cargo/env"
+
+export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+
+. "$HOME/.local/bin/env"
+
+export BASH_SILENCE_DEPRECATION_WARNING=1 # get rid of default zshell shit.
+eval "$(starship init bash)"              # starship prompt
