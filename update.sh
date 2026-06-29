@@ -10,7 +10,7 @@ cp ~/.config/nvim/ nvim/
 cp ~/.config/starship.toml starship/
 
 # ghostty
-cp ~/.config/ghostty/* ghostty/
+cp -r ~/.config/ghostty/* ghostty/
 
 git add .
 git commit -m "updating"
